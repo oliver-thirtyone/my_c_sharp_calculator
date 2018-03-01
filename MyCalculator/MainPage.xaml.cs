@@ -17,19 +17,29 @@ using Windows.UI.Xaml.Navigation;
 
 namespace MyCalculator
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
+        Calculator Calculator;
+        InputHandler InputHandler;
+
         public MainPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+
+            Calculator = new Calculator();
+            InputHandler = new InputHandler();
+
+            InputHandler.Updated += OnInputChanged;
+        }
+
+        private void OnInputChanged(object sender, EventArgs e)
+        {
+            ResultView.Text = InputHandler.Input;
         }
 
         private void Button_CE_Click(object sender, RoutedEventArgs e)
         {
-
+            InputHandler.ResetInput();
         }
 
         private void Button_C_Click(object sender, RoutedEventArgs e)
@@ -126,5 +136,6 @@ namespace MyCalculator
         {
 
         }
+
     }
 }

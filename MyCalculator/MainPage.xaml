@@ -8,7 +8,7 @@
     mc:Ignorable="d" Width="183" Height="208.5">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" VerticalAlignment="Top" Width="163" IsReadOnly="True"/>
+        <TextBox x:Name="ResultView" HorizontalAlignment="Left" Margin="10,10,0,0" Text="" VerticalAlignment="Top" Width="163" IsReadOnly="True"/>
 
         <Button Content="CE" HorizontalAlignment="Left" Margin="10,45,0,0" Width="40" Height="30" VerticalAlignment="Top" Click="Button_CE_Click"/>
         <Button Content="C" HorizontalAlignment="Left" Margin="51,45,0,0" Width="40" Height="30" VerticalAlignment="Top" Click="Button_C_Click"/>
