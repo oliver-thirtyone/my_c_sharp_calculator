@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MyCalculator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("I simple calculator in C#")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("MyCalculator")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("r3zn1k")]
 [assembly: AssemblyCulture("")]
 
 // Version information for an assembly consists of the following four values:
